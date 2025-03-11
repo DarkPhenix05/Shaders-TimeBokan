@@ -19,7 +19,7 @@ public class CameraCapture : MonoBehaviour
         Texture2D captureTexture = Texture2DGetRenderTexture(rt);
 
         byte[] data = captureTexture.EncodeToPNG();
-        FileStream fs = new FileStream(@"F:\7mo semestre\ComputoGrafico\ShaderClass4\Assets\Materials\Recursos\SAMPLE.jpg", FileMode.OpenOrCreate);
+        FileStream fs = new FileStream(Application.dataPath + "/Assets/Materials/Recursos/SAMPLE.jpg", FileMode.OpenOrCreate);
         fs.Write(data, 0, data.Length);
         fs.Close();
 
@@ -28,6 +28,9 @@ public class CameraCapture : MonoBehaviour
 
     public Texture2D Texture2DGetRenderTexture(RenderTexture rt)
     {
+        if(!rt)
+            return null;
+        
         RenderTexture.active = rt;
 
         Texture2D tempTexture = new Texture2D(rt.width, rt.height);

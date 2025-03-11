@@ -192,8 +192,8 @@ Material:
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DistantFadeEnd: 30
-    - _DistantFadeStart: 5
+    - _DistantFadeEnd: 5000
+    - _DistantFadeStart: 50
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
