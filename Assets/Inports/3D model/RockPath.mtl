@@ -1,0 +1,13 @@
+# Blender 4.1.1 MTL File: 'Sketchfab_2022_07_11_17_55_58.blend'
+# www.blender.org
+
+newmtl rock_path
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/albedo.jpg
+map_Ns C:/roughness.jpg
+map_Bump -bm 1.000000 C:/normal.jpg
